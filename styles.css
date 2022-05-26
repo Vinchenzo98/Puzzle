@@ -1,0 +1,94 @@
+html{
+    background-image: url('background_1.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+}
+
+html, body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  canvas {
+    display: block;
+  }
+ 
+  @font-face {
+    font-family: Gameria;
+    src: url(GAMERIA.woff2);
+  }
+
+  @font-face {
+    font-family: Affirm;
+    src: url(Affirmative.woff2);
+  }
+
+  .title{
+      padding:20px;
+      font-family: Gameria;
+      color: red;
+      text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  }
+
+  #code{
+      display: none;
+      background-color: white;
+      z-index: 1;
+      height: 50%;
+      width: 50%;
+      position: absolute;
+      top: 200px;
+      min-width: 400px;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 10px;
+
+  }
+
+  .inner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+  }
+  .subtitle{
+      font-family: Gameria;
+  }
+
+  .text{
+    font-family: Gameria;
+  }
+
+  .answer{
+      display: flex;
+    font-family: Gameria;
+      text-align: center;
+      max-width: 200px;
+  }
+
+  .btn{
+    font-family: Gameria;
+    color: white;
+    padding: 20px;
+    border: none;
+    background-color: red;
+    border: ma;
+    width:50%;
+    margin-top:30px;
+  }
+
+
+  /*
+  .border-wrap {
+    max-width: 250px;
+  width: 55%;
+  height: 55%;
+  z-index: 2;
+    position: relative;
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+  }
+  */
