@@ -162,13 +162,3 @@ function findBlank() {
   }
 }
 
-/*
-function lock(orientaiton){
-  
-  let de = document.documentElement;
-  if(){
-
-  }
-  screen.orientation.lock(orientaiton)
-}
-*/

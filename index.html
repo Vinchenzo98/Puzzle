@@ -7,7 +7,32 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="utf-8" />
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+    <script>
+      function lock(orientaiton){
+
+        let de = document.documentElement;
+        if(de.requestFullscreen){
+          de.requestFullscreen();
+        } 
+        else if (de.mozRequestFullscreen){de.mozRequestFullscreen();}
+        else if (de.webkitRequestFullscreen){de.webkitRequestFullscreen();}
+        else if (de.msRequestFullscreen){de.msRequestFullscreen();}
+        screen.orientation.lock(orientaiton)
+      hide()
+    }
+
+    function hide(){
+      var hide = document.getElementById("mobilePLay");
+      if (hide.style.display === "none"){
+        hide.style.display = "flex";
+      } else{
+        hide.style.display = "none";
+      }
+    }
+    </script>
   </head>
+
   <body>
       <div class="title">
           <h1>Solve The Puzzle</h1>
@@ -25,10 +50,14 @@
           </div>
       </div>
       
-  
+      <div id="mobilePLay">
+        <h1 class="subtitle">
+          CLick to PLay
+        </h1>
+        <button class="btn" onclick="lock('portrait')">Play</button>
+      </div>
+
         
-      
-  
     <script src="tile.js"></script>
     <script src="sketch.js"></script>
   </body>

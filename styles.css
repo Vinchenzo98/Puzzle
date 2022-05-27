@@ -87,11 +87,38 @@ html, body {
       max-width: 200px;
   }
 
+.btn{
+  font-family: Gameria;
+  padding:20px;
+  width: 50%;
+  max-width: 300px;
+  min-width: 80px;
+  color: white;
+  background-color: red;
+}
 
 
+#mobilePLay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  height:50%;
+  background-color: white; 
+  color: black;
+  border-radius: 10px;
+  border-color: red;
+  border-width: 10px;
+  border-style: solid;
+  position: absolute;
+  top: 200px;
+}
 
-  @media only screen and (max-width:420) and (orientation: portrait){
-    body{
-        height: 900px;
-    }
+
+@media only screen and (min-width: 600px) and (orientation: portrait){
+  #mobilePLay{
+      display: none;
   }
+}
+ 
