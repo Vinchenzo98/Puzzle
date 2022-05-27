@@ -57,8 +57,11 @@ html, body {
       top: 200px;
       min-width: 400px;
       max-width: 500px;
-      border-radius: 10px;
       box-shadow: 10px;
+      border-radius: 10px;
+      border-color: red;
+      border-width: 10px;
+      border-style: solid;
 
   }
 
@@ -84,14 +87,11 @@ html, body {
       max-width: 200px;
   }
 
-  .btn{
-    font-family: Gameria;
-    color: white;
-    padding: 20px;
-    border: none;
-    background-color: red;
-    border: ma;
-    width:50%;
-    margin-top:30px;
-  }
 
+
+
+  @media only screen and (max-width:420) and (orientation: portrait){
+    body{
+        height: 900px;
+    }
+  }

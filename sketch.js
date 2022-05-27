@@ -1,11 +1,4 @@
 // Slide Puzzle Image
-// The Coding Train / Daniel Shiffman
-// https://thecodingtrain.com/CodingChallenges/165-slide-puzzle.html
-// https://youtu.be/uQZLzhrzEs4
-
-// Image: https://editor.p5js.org/codingtrain/sketches/o_ljlLilZ
-// Video: https://editor.p5js.org/codingtrain/sketches/YnLX7bGwW
-// Canvas: https://editor.p5js.org/codingtrain/sketches/MVCd9trLw
 
 
 // Source image to chop up
@@ -53,6 +46,8 @@ function setup() {
   
   // Shuffle the board
   simpleShuffle(board);
+
+
 }
 
 // Swap two elements of an array
@@ -118,7 +113,11 @@ function draw() {
   if (isSolved()) {
     document.getElementById("code").style.display = "block";
   }
+
+  
 }
+
+
 
 // Check if solved
 function isSolved() {
@@ -162,3 +161,14 @@ function findBlank() {
     if (board[i] == -1) return i;
   }
 }
+
+/*
+function lock(orientaiton){
+  
+  let de = document.documentElement;
+  if(){
+
+  }
+  screen.orientation.lock(orientaiton)
+}
+*/
