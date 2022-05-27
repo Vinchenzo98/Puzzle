@@ -116,7 +116,7 @@ html, body {
 }
 
 
-@media only screen and (min-width: 600px) and (orientation: portrait){
+@media only screen and (min-width: 600px) {
   #mobilePLay{
       display: none;
   }
