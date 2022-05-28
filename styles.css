@@ -99,7 +99,7 @@ html, body {
 
 
 #mobilePLay{
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -115,10 +115,16 @@ html, body {
   top: 200px;
 }
 
+#defaultCanvas0{
+  border-radius: 10px;
+  border-color: red;
+  border-width: 10px;
+  border-style: solid;
+}
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) and (min-width: 200px)  {
   #mobilePLay{
-      display: none;
+      display: flex !important;
   }
 }
  
